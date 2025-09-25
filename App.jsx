@@ -1,7 +1,7 @@
 import React, { useState, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 
-const BigComponent = React.lazy(() => import("./Bigcomponent"));
+const BigComponent = React.lazy(() => import("./BigСomponent"));
 
 function App() {
   const [show, setShow] = useState(false);
@@ -22,3 +22,4 @@ function App() {
 
 const root = createRoot(document.getElementById("root"));
 root.render(<App />);
+
